@@ -1,1 +1,58 @@
 /* Have fun coding :) */
+@font-face {
+  font-family: SemiBold;
+  src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: SemiLight;
+  src: url(../fonts/Outfit-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d6e2f0;
+}
+
+.qr-container {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 3.2px 2.2px rgba(0, 0, 0, 0.02),
+  0 7px 5.4px rgba(0, 0, 0, 0.028), 0 12.1px 10.1px rgba(0, 0, 0, 0.035),
+  0 19.8px 18.1px rgba(0, 0, 0, 0.042), 0 34.7px 33.8px rgba(0, 0, 0, 0.05),
+  0 81px 81px rgba(0, 0, 0, 0.07);
+}
+
+.qr-container .qr-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.qr-container .qr-description {
+  padding: 15px;
+  text-align: center;
+}
+
+.qr-container .qr-description h3 {
+  font-family: SemiBold;
+}
+
+.qr-container .qr-description p {
+  margin-top: 10px;
+  font-family: SemiLight;
+  font-size: 14px;
+  color: #7b879d;
+}
