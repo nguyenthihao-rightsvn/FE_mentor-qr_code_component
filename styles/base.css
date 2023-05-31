@@ -29,10 +29,10 @@ body {
   width: 260px;
   padding: 14px;
   /* bo tròn các góc */
-  /* ???: 16px; */
+  border-radius: 16px;
 
   /* gán màu nền đúng với design */
-  /* background-color: ???; */
+  background-color: #fff;
 }
 
 .qr-img {
@@ -46,11 +46,11 @@ body {
 
 .qr-memo {
   /* tạo spacing thích hợp cho box như design */
-  /* ???: 16px 10px; */
+  padding: 16px 10px;
   text-align: center;
 }
 /* chọn thẻ h3 tương ứng trong layout (html) */
-/* .qr-memo ??? { */
+.qr-memo h3 {
   margin: 16px 0;
   font-size: 18px;
   font-weight: 700;
