@@ -1,1 +1,93 @@
 /* Have fun coding :) */
+@import url('https://fonts.googleapis.com/css?family=Outfit');
+
+body {
+  background-color: #7b879d;
+  font-family: "Outfit";
+  font-size: 15px;
+}
+
+.qr-container {
+  background-color: #fff;
+  width: 250px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qr-image-container {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+img:hover {
+  animation: turn 5s linear infinite;
+}
+
+.description-container {
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.description-container h3 {
+  margin: 0px;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+.description-container p {
+  color: #d6e2f0;
+  margin: 0px;
+  padding-bottom: 25px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes turn {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
