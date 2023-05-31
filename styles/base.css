@@ -1,1 +1,44 @@
 /* Have fun coding :) */
+@font-face {
+  font-family: outfitRegular;
+  src: url("../fonts/Outfit-Regular.ttf")
+}
+body {
+  background: #d6e2f0;
+  font-family: outfitRegular;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.qr-code {
+  width: 300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.qr-code__top img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.qr-code__desc {
+  padding: 20px 10px;
+}
+
+.qr-code__desc h3 {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.qr-code__desc p {
+  color: #7b879d;
+}
